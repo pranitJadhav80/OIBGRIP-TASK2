@@ -1,0 +1,148 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 2% 5% 0%;
+    background-color: antiquewhite;
+}
+
+h1.head {
+    font-size: 6em;
+}
+
+.base {
+    border-radius: 70px;
+    padding: 30px 30px 10px;
+    background-color: rgb(195, 211, 236);
+    text-align: center;
+}
+
+.cover_image {
+    border-radius: 70px;
+    padding: 10px;
+    margin: 1px;
+    background-color: rgba(117, 217, 228, 0.916);
+    text-align: center;
+    color: #222;
+}
+
+.cover_image .cover {
+    border-radius: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    border-radius: 70px;
+    text-align: left;
+    background-color: rgba(117, 217, 228, 0.916);
+    padding: 15px;
+    font-size: 18px;
+}
+
+.content ul {
+    padding: 0 20vw;
+    text-align: left;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.content ul li {
+    font-weight: 100;
+    width: 803px;
+}
+
+.content ul li strong:after {
+    content: " - ";
+    font-weight: 100;
+    color: #444;
+}
+
+.quotes {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+}
+
+.copyright {
+    background: #116677;
+}
+
+.copyright .ft-devlp {
+    color: #fff;
+    font-size: 1em;
+    margin: 7px 0px 10px;
+}
+
+.copyright p.ft-devlp {
+    color: #fff;
+    text-align: center;
+}
+
+.copyright p.ft-devlp a {
+    font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    text-decoration: none;
+    margin: 2px;
+}
+
+.copyright p.ft-devlp a:hover {
+    color: #eee;
+}
+
+.copyright #heart {
+    position: relative;
+    animation: heartbeat 1s infinite;
+    color: rgba(180, 22, 25, 1.00);
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(.75)
+    }
+    20% {
+        transform: scale(1)
+    }
+    40% {
+        transform: scale(.75)
+    }
+    60% {
+        transform: scale(1)
+    }
+    100%,
+    80% {
+        transform: scale(.75)
+    }
+}
+@media (max-width: 1200px) {
+    .content ul {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        padding: 0;
+        margin: 0;
+    }
+    .base {
+        margin: 5px;
+    }
+    .content ul {
+        padding: 10px;
+    }
+}
